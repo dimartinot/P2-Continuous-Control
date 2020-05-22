@@ -5,7 +5,7 @@
 
 ## Environment
 
-In the context of the \textit{Reacher} environment, our agent is an arm with two joints that needs to move to different target locations, modelized by a round 3D Green ball rotating around the arm's extremity. 
+In the context of the *Reacher* environment, our agent is an arm with two joints that needs to move to different target locations, modelized by a round 3D Green ball rotating around the arm's extremity. 
 The Reacher environment of the agent is highly similar to the one developed by Unity in the following sets of learning environment: [https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher](Unity Reacher)
 
 ### States
