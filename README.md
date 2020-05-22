@@ -6,7 +6,7 @@
 ## Environment
 
 In the context of the *Reacher* environment, our agent is an arm with two joints that needs to move to different target locations, modelized by a round 3D Green ball rotating around the arm's extremity. 
-The Reacher environment of the agent is highly similar to the one developed by Unity in the following sets of learning environment: [https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher](Unity Reacher)
+The Reacher environment of the agent is highly similar to the one developed by Unity in the following sets of learning environment: [Unity Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher)
 
 ### States
 To capture is knowledge of the environment, our agent has an observation space of size 33. Amongst all the variables making up this vector, we can count the position of the arm, its velocity (of the arm as a whole and of its angles), its rotation index and so on.
