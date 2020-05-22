@@ -56,15 +56,13 @@ $ jupyter notebook
 ## Code architecture
 This project is made of two main jupyter notebooks using classes spread in multiple Python file:
 ### Jupyter notebooks
-- `Navigation.ipynb`: notebook of the code execution. It loads the weight file of the model and execute 5 runs of the environment while averaging, at the end, the score obtained in all these environment (make sure to have provided the correct path to the Banana exe file). 
-- `project_nagivation.ipynb`: notebook containing the training procedure (see especially the `dqn` method for details).
+ - `DDPG.ipynb`: Training of the DDPG agent;
+ - `Prioritised_DDPG.ipynb`: Training of the prioritised DDPG agent.
 
 ### Python files
  - `ddpg_agent.py`: Contains the class definition of the basic DPPG learning algorithm that uses soft update (for weight transfer between the local and target networks) as well as a uniformly distributed replay buffer and OUNoise to model the exploration/exploitation dilemma;
  - `model.py`:  Contains the PyTorch class definition of the Actor and the critic neural networks, used by their mutual target and local network's version;
  - `prioritized_ddpg_agent.py`: Contains the class definition of the DDPG learning algorithm with prioritized replay buffer;
- - `DDPG.ipynb`: Training of the DDPG agent;
- - `Prioritised_DDPG.ipynb`: Training of the prioritised DDPG agent.
 
 ### PyTorch weights
 4 weight files are provided, two for each agent (critic + actor): as they implement the same model, they are interchangeable. However, as a different training process has been used, I found it interesting to compare the resulting behaviour of the agent:
