@@ -33,9 +33,9 @@ This project is made of two main jupyter notebooks using classes spread in multi
 ## Python files
  - `ddpg_agent.py`: Contains the class definition of the basic DPPG learning algorithm that uses soft update (for weight transfer between the local and target networks) as well as a uniformly distributed replay buffer and OUNoise to model the exploration/exploitation dilemma;
  - `model.py`:  Contains the PyTorch class definition of the Actor and the critic neural networks, used by their mutual target and local network's version;
- - `prioritized_ddpg_agent.py`: Contains the class definition of the DDPG learning algorithm with prioritized replay buffer.
-
-where p is the lastly measured td error of the experience tuple, before its insertion in the buffer. Alpha is an hyperparameter: the closer alpha is to zero, the more uniform the sampling distribution will be. The closer to one, the less uniform it will be. As a default, the alpha value used in this project was 0.9.
+ - `prioritized_ddpg_agent.py`: Contains the class definition of the DDPG learning algorithm with prioritized replay buffer;
+ - `DDPG.ipynb`: Training of the DDPG agent;
+ - `Prioritised_DDPG.ipynb`: Training of the prioritised DDPG agent.
 
 ## PyTorch weights
 4 weight files are provided, two for each agent (critic + actor): as they implement the same model, they are interchangeable. However, as a different training process has been used, I found it interesting to compare the resulting behaviour of the agent:
