@@ -1,6 +1,8 @@
 # P2-Continuous Control
  Project 2 of Continuous Control from the Udacity's Nanodegree program with implementation of two versions of the DDPG algorithm (with uniform sampling and prioritised sampling of the replay buffer)
 
+![](env_screen.png)
+
 # Installation
 Clone this GitHub repository, create a new conda environment and install all the required libraries using the frozen `conda_requirements.txt` file.
 ```shell
